@@ -1,7 +1,5 @@
-// Task 3i
 
 db.credits.aggregate([
-    // TODO: Write your query here
     { $unwind : "$cast" },
     {$match: {"cast.id": 7624}},
     {

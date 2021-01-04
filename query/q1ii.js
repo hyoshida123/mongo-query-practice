@@ -1,7 +1,5 @@
-// Task 1ii
 
 db.movies_metadata.aggregate([
-    // TODO: Write your query here
     {$match: {vote_count: { $gte:  50}}},
     {$match: {"genres": {$elemMatch: {name: "Comedy"}}}},
     // Sort in descending order of vote_average, break ties by descending order of vote_count, break ties further by movieId

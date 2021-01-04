@@ -1,7 +1,5 @@
-// Task 3ii
 
 db.credits.aggregate([
-    // TODO: Write your query here
     { $unwind : "$cast" },
     { $match: {crew: { $elemMatch: { id: 5655, job: "Director" } } }},
     {

@@ -1,7 +1,5 @@
-// Task 2i
 
 db.movies_metadata.aggregate([
-    // TODO: Write your query here
     {
         "$addFields": {
             //_id: "$movieId", // Group by the field movieId

@@ -1,7 +1,5 @@
-// Task 2iii
 
 db.movies_metadata.aggregate([
-    // TODO: Write your query here
     {
         $project: {
                 _id: 0, // explicitly project out this field
